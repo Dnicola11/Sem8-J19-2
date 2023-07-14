@@ -1,4 +1,4 @@
-@server = https://dnicola11-solid-disco-xjg6w9pg7pw366xv-8080.preview.app.github.dev
+@server = https://dnicola11-super-duper-chainsaw-ggv9q5rvr9rh9699-8080.preview.app.github.dev
 ###
 
 GET {{server}}/
