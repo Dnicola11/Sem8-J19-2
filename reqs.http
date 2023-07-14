@@ -1,5 +1,4 @@
 @server = https://dnicola11-super-duper-chainsaw-ggv9q5rvr9rh9699-8080.preview.app.github.dev
-###
 GET {{server}}/cursos
 ###
 POST {{server}}/cursos
