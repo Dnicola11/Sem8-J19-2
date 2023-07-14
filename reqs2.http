@@ -1,0 +1,43 @@
+@server = https://s8-xwhh.onrender.com
+###
+
+GET {{server}}/
+###
+GET {{server}}/cursos
+###
+POST {{server}}/cursos
+Content-Type: application/json
+
+{"nombre": "Algoritmos", "creditos":3}
+###
+GET {{server}}/cursos/1
+###
+PATCH {{server}}/cursos/52
+Content-Type: application/json
+
+{"nombre": "Matematicas", "creditos":1}
+###
+GET {{server}}/cursos?size=2&page=0
+###
+GET {{server}}/cursos?size=2&page=0&sort=creditos,desc
+###
+GET {{server}}/cursos/search/findByNombre?nombre=Algoritmos
+#########################################################
+GET {{server}}/carreras
+###
+POST {{server}}/carreras
+Content-Type: application/json
+
+{"nombre": "Desarrollo de sistemas de informacion"}
+###
+POST {{server}}/carreras
+Content-Type: application/json
+
+{"nombre": "Marketing"}
+########
+GET {{server}}/carreras/2/cursos
+########
+GET {{server}}/carreras/1/cursos
+########
+GET {{server}}/cursos/3/carrera
+
